@@ -50,7 +50,7 @@ class SepCONV(nn.HybridBlock):
             else:
                 self.net.add(
                     nn.Conv2D(in_channels=inp, channels=cn, groups=inp, kernel_size=kernel_size, strides=(1,1), padding=kernel_size // 2
-                        , use_bias=True),
+                        , use_bias=False),
                     nn.BatchNorm(),
                     nn.Activation('relu'),
                     nn.Conv2D(in_channels=cn, channels=output, kernel_size=(1,1), strides=(1,1)
