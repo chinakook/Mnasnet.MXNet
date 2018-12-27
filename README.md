@@ -9,4 +9,4 @@ To train this model, you need first install the [gluon-cv](https://github.com/dm
 [A pretrained model](https://github.com/zeusees/Mnasnet-Pretrained-Model) is provided by [zuesees](https://github.com/zeusees). They've got 73.6% Top-1 score and 91.52% Top-5 score, nearly approaching official accuracy.
 
 ## TODO
-After some tunes, I think you will get higher accuracy. I have no much time to do this now, so I hope someone could report to me when he/she get a better accuracy.
+After some tunes, I think you will get higher accuracy. I'm not free to do this now, so I hope someone could report to me when he/she get a better accuracy.
