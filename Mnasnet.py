@@ -98,9 +98,9 @@ def ExpandedConvSequence(t, k, inp, oup, repeats, first_strides, **kwargs):
             curr_inp = oup
     return seq
 
-class MobilenetV2(nn.HybridBlock):
+class MNasNet(nn.HybridBlock):
     def __init__(self, num_classes=1000, **kwargs):
-        super(MobilenetV2, self).__init__(**kwargs)
+        super(MNasNet, self).__init__(**kwargs)
         
         self.first_oup = 32
         self.interverted_residual_setting = [
@@ -134,7 +134,7 @@ class MobilenetV2(nn.HybridBlock):
         return x
 
 if __name__ == '__main__':
-    net = MobilenetV2(1000, prefix="")
+    net = MNasNet(1000, prefix="")
     x = nd.random.normal(shape=(1,3,224,224))
     net.initialize()
     y = net(x)
